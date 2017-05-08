@@ -1,0 +1,13 @@
+<h1>Create a new appearance</h1>
+
+
+<%= form_tag @appearance do %>
+ Please enter a guest id: <%= number_field_tag :guest_id %> <br>
+ Please enter an episode id: <%= number_field_tag :episode_id %> <br>
+ Please enter a rating: <%= number_field_tag :rating %> <br>
+ <%= button_to("Create an appearance", appearances_path, :method => :post) %>
+
+<% end %>
+
+<!--
+ params: {'guest_id'=> params["guest_id"], 'episode_id' => params["episode_id"]} %> -->

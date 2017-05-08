@@ -1,0 +1,8 @@
+<h1>Aired on <%= @episode.date %></h1>
+
+
+<h1>This show included </h1>
+
+    <% @guests.each do |guest| %>
+    <%= guest.name %>
+    <% end %>
